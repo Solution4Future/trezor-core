@@ -1,10 +1,12 @@
 language: python
+sudo: required
+dist: trusty
 python:
   - "2.7"
   - "3.4"
   - "3.5"
 before_install:
-  - sudo apt-get install libsdl2-dev:i386
+  - sudo apt-get install libsdl2-dev
   - make build_unix
 
 install: "pip install trezor"
