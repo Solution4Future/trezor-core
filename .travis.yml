@@ -6,7 +6,7 @@ python:
   - "3.4"
   - "3.5"
 before_install:
-  - sudo apt-get install libsdl2-dev gcc-multilib g++-multilib
+  - sudo apt-get install libsdl2-dev gcc-multilib g++-multilib libusb-1.0-0-dev
 
 install: "pip install trezor"
 
