@@ -1,0 +1,12 @@
+language: python
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+before_install:
+  - sudo apt-get install libsdl2-dev:i386
+  - make build_unix
+
+install: "pip install trezor"
+
+script: "cd src/tests && bash ./runtests.sh"
